@@ -43,12 +43,12 @@
 \newboolean{logofound}
 \ifpdf
   \DeclareGraphicsExtensions{.pdf}
-  \IfFileExists{GUET-logo.pdf}
+  \IfFileExists{./Picture/GUET-logo.pdf}
         {\setboolean{logofound}{true}}
         {\setboolean{logofound}{false}}
 \else
   \DeclareGraphicsExtensions{.eps}
-  \IfFileExists{GUET-logo.eps}
+  \IfFileExists{./Picture/GUET-logo.eps}
     {\setboolean{logofound}{true}}
     {\setboolean{logofound}{false}}
 \fi
@@ -89,7 +89,7 @@
     \parbox{4.00in}
     {\raggedright
         \ifthenelse{\boolean{logofound}}
-           {\includegraphics[width=0.54\textwidth]{GUET-logo.pdf}}
+           {\includegraphics[width=0.54\textwidth]{./Picture/GUET-logo.pdf}}
            {\parbox[c][2.0in][c]{4.0in}{\hfill}
             \ClassWarning{GUET-Letter}{GUET-logo.eps COULD NOT BE FOUND!}}
     } &
